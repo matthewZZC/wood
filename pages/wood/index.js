@@ -7,19 +7,19 @@ Page({
   data: {
     array: [{
       title: '俄罗斯板材进出口限制好，俄罗斯板材进出口限制，俄罗斯板材进出口限制，俄罗斯板材进出口限制',
-      picture: 'https://t11.baidu.com/it/u=2758806166,3691243368&fm=173&s=5CA40BD640401B5D4433F9B20300C00B&w=640&h=1136&img.JPEG',
-      source: '东北新闻'
+      picture: 'https://t10.baidu.com/it/u=2969485281,2552444972&fm=173&s=118B9D554202554D4E1EDC780300A038&w=600&h=375&img.JPEG',
+      source: '线上测试'
     }, {
         title: '北京东坝木材交易，北京东坝木材交易北京东坝木材交易北京东坝木材交易',
-      picture: 'https://t11.baidu.com/it/u=2758806166,3691243368&fm=173&s=5CA40BD640401B5D4433F9B20300C00B&w=640&h=1136&img.JPEG',
+        picture: 'https://t10.baidu.com/it/u=2969485281,2552444972&fm=173&s=118B9D554202554D4E1EDC780300A038&w=600&h=375&img.JPEG',
       source: '北京新闻'
       }, {
         title: '码头交易',
-        picture: 'https://t11.baidu.com/it/u=2758806166,3691243368&fm=173&s=5CA40BD640401B5D4433F9B20300C00B&w=640&h=1136&img.JPEG',
+        picture: 'https://t10.baidu.com/it/u=2969485281,2552444972&fm=173&s=118B9D554202554D4E1EDC780300A038&w=600&h=375&img.JPEG',
         source: '太仓港'
     }, {
-      title: '郑清福木材制造商',
-      picture: 'https://t11.baidu.com/it/u=2758806166,3691243368&fm=173&s=5CA40BD640401B5D4433F9B20300C00B&w=640&h=1136&img.JPEG',
+      title: '郑清福木材制造',
+      picture: 'https://t10.baidu.com/it/u=2969485281,2552444972&fm=173&s=118B9D554202554D4E1EDC780300A038&w=600&h=375&img.JPEG',
       source: '清福业务员'
     }]
   },
