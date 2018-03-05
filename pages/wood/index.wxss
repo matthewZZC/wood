@@ -1,0 +1,14 @@
+/* pages/wood/index.wxss */
+.scroll-navigations{
+  border-bottom: 1rpx solid #000
+}
+.navigations{
+  display: flex;
+  }
+.navigations button{
+  white-space:pre-wrap;
+  border: none;
+}
+.itemContentImage{
+  margin:1px
+}

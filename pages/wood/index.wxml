@@ -1,0 +1,61 @@
+<view>
+  <!--导航-->
+  <scroll-view class='scroll-navigations' scroll-x='true'>
+    <view class='navigations'>
+      <view>
+        <button plain='true' size='mini'>
+          <text style='white-space:nowrap '>本地</text>
+        </button>
+      </view>
+      <view>
+        <button plain='true' size='mini'>
+          <text style='white-space:nowrap '>推荐</text>
+        </button>
+      </view>
+      <view>
+        <button plain='true' size='mini'>
+          <text style='white-space:nowrap '>交易</text>
+        </button>
+      </view>
+      <view>
+        <button plain='true' size='mini'>
+          <text style='white-space:nowrap '>咨询</text>
+        </button>
+      </view>
+      <view>
+        <button plain='true' size='mini'>
+          <text style='white-space:nowrap '>个人</text>
+        </button>
+      </view>
+      <view>
+        <button plain='true' size='mini'>
+          <text style='white-space:nowrap '>推广</text>
+        </button>
+      </view>
+      <view>
+        <button plain='true' size='mini'>
+          <text style='white-space:nowrap '>郑清福</text>
+        </button>
+      </view>
+    </view>
+  </scroll-view>
+  <!-- 内容部分 -->
+  <scroll-view class='scroll-content' scroll-y='true' style=''>
+    <!--使用循环列表 -->
+    <view wx:for="{{array}}"  wx:for-index="indexContent" wx:for-item="itemContent"  style='border-bottom: 1rpx solid #000;margin:20rpx' >
+      <!-- 这里要缩进 -->
+      <view style='margin-left:30rpx'>  
+        {{itemContent.title}}
+      </view>
+      <view style="text-align:center;">
+         <!-- 这里要缩进 -->
+         <image class='itemContentImage' style="width: 220rpx; height: 150rpx" mode="aspectFill" src="{{itemContent.picture}}"></image>
+         <image class="itemContentImage" style="width: 220rpx; height: 150rpx;" mode="aspectFill" src="{{itemContent.picture}}"></image>
+         <image class='itemContentImage' style="width: 220rpx; height: 150rpx" mode="aspectFill" src="{{itemContent.picture}}"></image>
+      </view>
+      <view>
+        {{itemContent.source}}
+      </view>
+    </view>
+  </scroll-view>
+</view>

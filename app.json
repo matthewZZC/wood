@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/wood/index",
+    "pages/wood/wood",
+    "pages/index/index",
+    "pages/test/view",
+    "pages/logs/logs",
+    "pages/2"
+    
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "木材头条",
+    "backgroundColor": "#ff00ff",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "color": "black",
+    "selectedColor": "yellow",
+    "backgroundColor": "#21b02b",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "国内"
+      },
+      {
+        "pagePath": "pages/wood/wood",
+        "text": "国外"
+      }
+    ],
+    "position": "bottom"
+  }
+}
