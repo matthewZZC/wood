@@ -1,6 +1,6 @@
-<view>
+<scroll-view class="content-wrap" scroll-y="true" >
   <!--导航-->
-  <scroll-view class='scroll-navigations' scroll-x='true'>
+  <scroll-view  id='scroll-navigations' class='scroll-navigations' scroll-x='true'>
     <view class='navigations'>
       <view>
         <button plain='true' size='mini'>
@@ -39,23 +39,25 @@
       </view>
     </view>
   </scroll-view>
+
+  
   <!-- 内容部分 -->
-  <scroll-view class='scroll-content' scroll-y='true' style=''>
+  <scroll-view id='scroll-content' class='scroll-content' scroll-y='true'  scroll-x='true' style=''>
     <!--使用循环列表 -->
-    <view wx:for="{{array}}"  wx:for-index="indexContent" wx:for-item="itemContent"  style='border-bottom: 1rpx solid #000;margin:20rpx' >
+    <view wx:for="{{array}}" wx:for-index="indexContent" wx:for-item="itemContent" style='border-bottom: 1rpx solid #000;margin:20rpx'>
       <!-- 这里要缩进 -->
-      <view style='margin-left:30rpx'>  
+      <view style='margin-left:30rpx'>
         {{itemContent.title}}
       </view>
       <view style="text-align:center;">
-         <!-- 这里要缩进 -->
-         <image class='itemContentImage' style="width: 220rpx; height: 150rpx" mode="aspectFill" src="{{itemContent.picture}}"></image>
-         <image class="itemContentImage" style="width: 220rpx; height: 150rpx;" mode="aspectFill" src="{{itemContent.picture}}"></image>
-         <image class='itemContentImage' style="width: 220rpx; height: 150rpx" mode="aspectFill" src="{{itemContent.picture}}"></image>
+        <!-- 这里要缩进 -->
+        <image class='itemContentImage' style="width: 220rpx; height: 150rpx" mode="aspectFill" src="{{itemContent.picture}}"></image>
+        <image class="itemContentImage" style="width: 220rpx; height: 150rpx;" mode="aspectFill" src="{{itemContent.picture}}"></image>
+        <image class='itemContentImage' style="width: 220rpx; height: 150rpx" mode="aspectFill" src="{{itemContent.picture}}"></image>
       </view>
       <view>
         {{itemContent.source}}
       </view>
     </view>
   </scroll-view>
-</view>
+</scroll-view>

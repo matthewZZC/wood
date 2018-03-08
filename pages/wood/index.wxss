@@ -1,14 +1,41 @@
 /* pages/wood/index.wxss */
-.scroll-navigations{
-  border-bottom: 1rpx solid #000
+
+.scroll-navigations {
+  border-bottom: 1rpx solid #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow: hidden;
+  z-index: 9;
 }
-.navigations{
-  display: flex;
-  }
-.navigations button{
-  white-space:pre-wrap;
+
+.navigations {
+  display: inline;
+}
+
+.navigations button {
+  white-space: pre-wrap;
   border: none;
 }
-.itemContentImage{
-  margin:1px
+
+.itemContentImage {
+  margin: 1px;
+}
+
+.content-wrap {
+  height: 100%;
+  display: -webkit-box;
+  display: box;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+}
+
+.scroll-content {
+  margin-top: 60rpx;
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
 }
