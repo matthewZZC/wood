@@ -1,0 +1,43 @@
+<view class='main'>
+  <!-- title -->
+  <view class='title'>
+    {{ message }}
+  </view>
+
+  <!-- authorInfo -->
+  <view class='authorInfo'>
+    {{ author }} {{ date }}
+  </view>
+  <!-- content -->
+  <scroll-view scroll-y='true' class='content-model'>
+    <view wx:for="{{[0,1,2,3,4,5,6,7,8]}}">
+      哈啊哈
+    </view>
+    <view wx:for="{{[0,1,2,3,4,5,6,7,8]}}">
+      哈啊哈
+    </view>
+    <view wx:for="{{[0,1,2,3,4,5,6,7,8]}}">
+      哈啊哈
+    </view>
+  </scroll-view>
+
+
+  <!--  -->
+  <!-- 评论 -->
+  <view>
+  </view>
+  <!-- 底部 -->
+  <view class='bottom-model'>
+    <view class='bottom-comment-write' style='text-align:center;'>
+      <input placeholder='写评论' style='font-size:30rpx' placeholder-style="color:green" confirm-type='send' bindfocus='chufa' />
+    </view>
+
+    <view style='margin-left:150rpx'>
+      <button style="background: url('{{favor%2==0?'/resources/images/favorAfter.png' :'/resources/images/favorBefore.png' }}') no-repeat;width: 60rpx;height: 60rpx;border:none;" bindtap='favorArtical' data-name="{{articalId}}" plain='true'></button>
+    </view>
+    <view style='margin-left:30rpx'>
+      <button style="background: url('/resources/images/share.png') no-repeat;width: 60rpx;height: 60rpx;border:none;" open-type="share" data-name="pageShare" id="share" plain='true'></button>
+    </view>
+
+  </view>
+</view>

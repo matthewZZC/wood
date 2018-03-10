@@ -11,12 +11,7 @@
 }
 
 .navigations {
-  display: inline;
-}
-
-.navigations button {
-  white-space: pre-wrap;
-  border: none;
+  display: flex;
 }
 
 .itemContentImage {
@@ -31,11 +26,23 @@
   box-orient: vertical;
 }
 
-.scroll-content {
-  margin-top: 60rpx;
-}
 ::-webkit-scrollbar {
   width: 0;
   height: 0;
   color: transparent;
+}
+
+.tab-content {
+  margin-top: 60rpx;
+}
+
+.navigations button {
+  white-space: pre-wrap;
+  border: none;
+  margin: 0 18rpx;
+}
+.tab-item {
+}
+.tab-item.active {
+  color: #4675f9;
 }

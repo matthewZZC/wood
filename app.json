@@ -1,12 +1,12 @@
 {
   "pages": [
+    "pages/article/index",
     "pages/wood/index",
     "pages/wood/wood",
     "pages/index/index",
     "pages/test/view",
     "pages/logs/logs",
     "pages/2"
-    
   ],
   "window": {
     "navigationBarBackgroundColor": "#ffffff",

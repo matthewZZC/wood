@@ -1,48 +1,59 @@
-<scroll-view class="content-wrap" scroll-y="true" >
+<scroll-view class="content-wrap" scroll-y="true">
   <!--导航-->
-  <scroll-view  id='scroll-navigations' class='scroll-navigations' scroll-x='true'>
+  <scroll-view id='scroll-navigations' class='scroll-navigations' scroll-x='true' scroll-left="{{scrollLeft}}">
     <view class='navigations'>
       <view>
-        <button plain='true' size='mini'>
+        <button plain='true' size='mini' data-current="0" bindtap="swichNav"  class="tab-item {{currentTab==0?'active':''}}" >
           <text style='white-space:nowrap '>本地</text>
         </button>
       </view>
       <view>
-        <button plain='true' size='mini'>
+        <button plain='true' size='mini'   data-current="1" bindtap="swichNav"   class="tab-item {{currentTab==1?'active':''}}" >
           <text style='white-space:nowrap '>推荐</text>
         </button>
       </view>
       <view>
-        <button plain='true' size='mini'>
+        <button plain='true' size='mini'   data-current="2" bindtap="swichNav" class="tab-item {{currentTab==2?'active':''}}" >
           <text style='white-space:nowrap '>交易</text>
         </button>
       </view>
-      <view>
-        <button plain='true' size='mini'>
-          <text style='white-space:nowrap '>咨询</text>
+         <view>
+        <button plain='true' size='mini'   data-current="3" bindtap="swichNav" class="tab-item {{currentTab==3?'active':''}}"  >
+          <text style='white-space:nowrap '>交易</text>
         </button>
       </view>
-      <view>
-        <button plain='true' size='mini'>
-          <text style='white-space:nowrap '>个人</text>
+         <view>
+        <button plain='true' size='mini'   data-current="4" bindtap="swichNav" class="tab-item {{currentTab==4?'active':''}}" >
+          <text style='white-space:nowrap '>交易</text>
         </button>
       </view>
-      <view>
-        <button plain='true' size='mini'>
-          <text style='white-space:nowrap '>推广</text>
+         <view>
+        <button plain='true' size='mini'   data-current="5" bindtap="swichNav" class="tab-item {{currentTab==5?'active':''}}" >
+          <text style='white-space:nowrap '>交易</text>
         </button>
       </view>
-      <view>
-        <button plain='true' size='mini'>
-          <text style='white-space:nowrap '>郑清福</text>
+         <view>
+        <button plain='true' size='mini' data-current="6" bindtap="swichNav" class="tab-item {{currentTab==6?'active':''}}" >
+          <text style='white-space:nowrap '>可以</text>
+        </button>
+      </view>
+        <view>
+        <button plain='true' size='mini'   data-current="7" bindtap="swichNav" class="tab-item {{currentTab==7?'active':''}}">
+          <text style='white-space:nowrap '>交易</text>
+        </button>
+      </view>
+        <view>
+        <button plain='true' size='mini'   data-current="8" bindtap="swichNav" class="tab-item {{currentTab==8?'active':''}}" >
+          <text style='white-space:nowrap '>交易</text>
         </button>
       </view>
     </view>
   </scroll-view>
 
-  
-  <!-- 内容部分 -->
-  <scroll-view id='scroll-content' class='scroll-content' scroll-y='true'  scroll-x='true' style=''>
+<swiper class='tab-content' current='{{currentTab}}' duration='300'  bindchange='switchTab'  style='height:1268rpx'>
+    <swiper-item wx:for="{{[0,1,2,3,4,5,6,7,8]}}">
+   <!-- 内容部分 -->
+  <scroll-view id='scroll-content' class='scroll-content' scroll-y='true' scroll-x='true'>
     <!--使用循环列表 -->
     <view wx:for="{{array}}" wx:for-index="indexContent" wx:for-item="itemContent" style='border-bottom: 1rpx solid #000;margin:20rpx'>
       <!-- 这里要缩进 -->
@@ -60,4 +71,10 @@
       </view>
     </view>
   </scroll-view>
+    </swiper-item>
+</swiper>
+
+
+
+  
 </scroll-view>

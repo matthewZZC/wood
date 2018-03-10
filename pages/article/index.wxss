@@ -1,0 +1,30 @@
+/* pages/article/index.wxss */
+.main{
+  margin: 20rpx
+}
+.title{
+  font-size: 30rpx
+}
+.authorInfo{
+  margin-top: 40rpx;
+  margin-bottom: 40rpx;
+  font-size: 20rpx
+}
+.bottom-model{
+  position: fixed;
+  bottom:0rpx; 
+  z-index:9;
+  background-color:white;
+  border-top:1rpx solid #000;
+  height: 60rpx;
+  width: 100%;
+  display: flex;
+}
+.content-model{
+  margin-bottom: 60rpx
+}
+.bottom-comment-write{
+  border: 1rpx solid #000;
+  border-radius: 20rpx;
+  width: 180rpx;
+}
