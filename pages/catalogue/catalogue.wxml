@@ -1,0 +1,58 @@
+<view style='display: flex;'>
+  <!-- 分成左右两块 -->
+
+  <view class="left">
+
+    <scroll-view scroll-y="true" style="height:{{winH}}px;;">
+      <view wx:for="{{array}}" wx:for-index="indexContent" wx:for-item="itemContent" class="leftblock">
+        <!-- 这里要缩进 -->
+        <!-- 这里要缩进 -->
+        <image class='itemContentImage' style="width: 110rpx; height: 110rpx" mode="scaleToFill" src="{{itemContent.picture}}"></image>
+        <view>
+          {{itemContent.source}}
+        </view>
+      </view>
+
+      <view wx:for="{{array}}" wx:for-index="indexContent" wx:for-item="itemContent" class="leftblock">
+        <!-- 这里要缩进 -->
+        <!-- 这里要缩进 -->
+        <image class='itemContentImage' style="width: 110rpx; height: 110rpx" mode="widthFix" src="{{itemContent.picture}}"></image>
+        <view>
+          {{itemContent.source}}
+        </view>
+      </view>
+
+    </scroll-view>
+  </view>
+
+  <!-- <scroll-view scroll-y="true"style='height:100%'>
+
+</scroll-view> -->
+  <view class="right">
+    <view style='border-bottom: 1rpx;margin:20rpx;'>热门分类</view>
+    <scroll-view scroll-y="true" style="height:{{winH}}px;;">
+      <!--使用循环列表 -->
+      <view wx:for="{{array}}" wx:for-index="indexContent" wx:for-item="itemContent" style=' display: flex;'>
+        <view class='itemContentBlock'>
+          <image style="width: 180rpx; height: 130rpx;margin-right:1px" mode="scaleToFill" src="{{itemContent.picture}}"></image>
+          <view>
+            {{itemContent.source}}
+          </view>
+        </view>   
+        <view class='itemContentBlock'>
+          <image style="width: 180rpx; height: 130rpx;margin-right:1px" mode="scaleToFill" src="{{itemContent.picture}}"></image>
+          <view>
+            {{itemContent.source}}
+          </view>
+        </view>  
+        <view class='itemContentBlock'>
+          <image style="width: 180rpx; height: 130rpx;margin-right:1px" mode="scaleToFill" src="{{itemContent.picture}}"></image>
+          <view>
+            {{itemContent.source}}
+          </view>
+        </view>  
+      </view>
+    </scroll-view>
+  </view>
+
+</view>

@@ -25,7 +25,7 @@
     <!--  -->
     <!-- 评论 -->
     <view class='comment-model' style='margin-top:40rpx;border-top:1rpx solid #000;padding-top:40rpx'>
-      <view>热门评论</view>
+      <view id="comment-focus">热门评论</view>
       <view>
 
         <view wx:for="{{commentData}}" style='padding-top:40rpx' wx:for-index="indexCommentData" wx:for-item="itemCommentData">
@@ -57,7 +57,8 @@
   <!-- 底部 -->
    <view class='bottom-model'>
     <view class='bottom-comment-write' style='text-align:center;'>
-      <input placeholder='写评论' style='font-size:30rpx' placeholder-style="color:green" confirm-type='send' bindfocus='chufa' />
+      <input placeholder='{{placeholderText}}' style='font-size:{{placeholderTextSize}}rpx' placeholder-style="color:green" confirm-type='send' bindfocus='focusComment' bindconfirm='writeComment'
+       bindblur='lostComment'   />
     </view>
 
     <view style='margin-left:150rpx'>

@@ -1,0 +1,20 @@
+.right{
+  position: absolute;  
+  top: 0;  
+  left: 25%; 
+}
+.left{
+  position: fixed;
+  width: 25%
+}
+.leftblock{
+  text-align:center;
+  font-size: 12px;
+  border-bottom: 1rpx solid white;
+  padding-bottom: 15rpx;
+}
+.itemContentBlock{
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 20rpx;
+}

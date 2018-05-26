@@ -14,6 +14,8 @@ Page({
     searchLoadingComplete: false,
     searchCount:0,
     searchPageNum: 1,   // 设置加载的第几次，默认是第一次  
+    placeholderText:'写评论..',
+    placeholderTextSize:30,
     commentData: [{
       name: '郑清福',
       content: '俄罗斯板材进出口限制好，俄罗斯板材进出口限制，俄罗斯板材进出口限制，俄罗斯板材进出口限制',
@@ -33,7 +35,6 @@ Page({
     }]
     // favorImage: "/resources/images/favorBefore.png"
   },
-
   /**
    * 生命周期函数--监听页面加载
    */
@@ -101,10 +102,38 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-
+        return {
+          title:'哈哈'
+        }
   },
-  chufa: function () {
+  writeComment: function (e) {
+    var that = this;
+    var loadList = [{
+      name: '郑清福',
+      content: e.detail.value,
+      date: "2018 - 8 - 12 13: 52"
+    }];
+    that.setData({
+      commentData: loadList.concat(that.data.commentData),
+    })
+    console.log(e.detail.value),
+      window.location.hash = "#comment-focus";
+  },
 
+  lostComment:function(){
+    var that = this;
+    
+    that.setData({
+      placeholderTextSize: 30,
+      placeholderText: '写评论..'
+    })
+  },
+  focusComment:function(){
+    var that = this;
+    that.setData({
+      placeholderTextSize: 20,
+      placeholderText: '优质评论优先展示'
+    })
   },
   ceshi: function () {
     console.log("fuck")
@@ -158,6 +187,4 @@ Page({
       this.fetchSearchList();
     }
   }
-
-
 })

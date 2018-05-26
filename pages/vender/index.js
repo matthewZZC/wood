@@ -1,4 +1,4 @@
-// pages/2.js
+// pages/vender/index.js
 Page({
 
   /**

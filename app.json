@@ -1,12 +1,13 @@
 {
   "pages": [
-    "pages/article/index",
-    "pages/wood/index",
+    "pages/vender/index",
     "pages/wood/wood",
     "pages/index/index",
+    "pages/article/index",
+    "pages/catalogue/catalogue",
+    "pages/wood/index",
     "pages/test/view",
-    "pages/logs/logs",
-    "pages/2"
+    "pages/logs/logs"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ffffff",

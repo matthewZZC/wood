@@ -1,5 +1,10 @@
 //app.js
 App({
+  globalData: {
+    userInfo: null,
+    title: "最懂你的木头人",
+    mobileHeight: 50,
+  },
   onLaunch: function () {
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
@@ -32,9 +37,5 @@ App({
         }
       }
     })
-  },
-  globalData: {
-    userInfo: null,
-    title:"最懂你的木头人"
   }
 })
