@@ -1,1 +1,10 @@
-/* pages/vender/index.wxss */
+.top{
+  width: 100%;
+  height: 300rpx;
+  /* background-color: red; */
+  background-image: url('https://developers.weixin.qq.com/miniprogram/dev/image/cat/0.jpg?t=2018518'); background-repeat:no-repeat; background-size:100% 100%;
+}
+.top_name{
+  padding-top: 180rpx;
+  padding-left: 50rpx
+}
